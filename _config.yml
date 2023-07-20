@@ -42,22 +42,22 @@ repository: 'moravick/CFBC_2023Incubator.github.io' # change this to your reposi
 #---------------------
 
 # Title of your website
-title: "IDAH@IU"
+title: "CFBC Archive"
 
 # Subtitle of your website. Leave blank if you want to.
-subtitle: "An Archive of Our Community's Heirlooms"
+subtitle: "An Historical Exhibit of Clarence Fitzroy Bryant College"
 
 # A longer description of your site (max 150 words). Helps search engines find you.
 description: "Community Archiving Site"
 
 # These credits show up in the includes/_footer.html
 # Main author of the website.
-author: "IDAH@IU"
-authorname : "Institute for Digital Arts and Humanities"
+author: "Team Willa"
+authorname : "Willa @ IDAH"
 sitelogo: "site_logo.jpg"
 
 # What year did you start up this community project?
-sitedate : 2022
+sitedate : 2023
 
 # Other community social media. Leave blank if you don't have these.
 email : "idah [at] iu.edu"
