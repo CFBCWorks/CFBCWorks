@@ -60,11 +60,11 @@ sitelogo: "site_logo.jpg"
 sitedate : 2023
 
 # Other community social media. Leave blank if you don't have these.
-email : "idah [at] iu.edu"
-website : "https://idah.indiana.edu/"
-twitter : "IDAH_IU"
-github : "idahatiu"
-facebook : "idahatiu"
+email : 
+website : 
+twitter : 
+github : "moravick"
+facebook : 
 instagram : 
 
 # If you need to know how many people visit your site, go to https://analytics.google.com/
