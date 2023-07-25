@@ -60,12 +60,12 @@ sitelogo: "site_logo.jpg"
 sitedate : 2023
 
 # Other community social media. Leave blank if you don't have these.
-email : 
-website : 
-twitter : 
-github : 
-facebook : 
-instagram : 
+email : ""
+website : ""
+twitter : ""
+github : ""
+facebook : ""
+instagram : ""
 
 # If you need to know how many people visit your site, go to https://analytics.google.com/
 # When you finish the setup assistant, it will give you a Measurement ID: G-ABCDEFGHIJ
@@ -148,8 +148,7 @@ baseurl:
 # Markdown-Example for posts ![Image Text]({{ site.url }}{{ site.baseurl }}{{ site.urlimg }}image.jpg)
 #
 urlimg: '/assets/img/'
-artifactImg: '/assets/artifacts/'
-peopleImg: '/assets/people/'
+urlitemimg: '/assets/items/'
 permalink: /:categories/:year/:month/:day/:title:output_ext
 
 markdown : kramdown
