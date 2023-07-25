@@ -1,16 +1,21 @@
 # Site navigation links
 
-- title: Our Community
-  url: /
+- title: Our Story
+  url: /index
   excerpt:
   image:
 
-- title: Our Collection
+- title: The Collection
   url: /collection
   excerpt:
   image:
 
-- title: Our Stories
-  url: /stories
+- title: Our People
+  url: /people
   excerpt:
   image:
+
+- title: The Project
+  url: /project
+  excerpt:
+  image: 
