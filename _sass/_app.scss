@@ -16,7 +16,7 @@ Base settings
 	}
 	@media print {
 		body {
-		  margin: 10mm 10mm 10mm 10mm;
+		  margin: 30mm;
 		  font-size: 12pt;
 		}
 	}
@@ -95,7 +95,8 @@ Base settings
 	}
 
 	.subheadline.siteheader {
-		color: $main-link;
+		color: $main-headers;
+		font-style: bold;
 		padding-bottom: .5em;
 	}
 
