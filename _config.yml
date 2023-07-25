@@ -42,7 +42,7 @@ repository: 'moravick/CFBC_2023Incubator.github.io' # change this to your reposi
 #---------------------
 
 # Title of your website
-title: "CFBC Archive"
+title: "blah"
 
 # Subtitle of your website. Leave blank if you want to.
 subtitle: "An Historical Exhibit of Clarence Fitzroy Bryant College"
@@ -63,7 +63,7 @@ sitedate : 2023
 email : 
 website : 
 twitter : 
-github : "moravick"
+github : 
 facebook : 
 instagram : 
 
@@ -148,7 +148,8 @@ baseurl:
 # Markdown-Example for posts ![Image Text]({{ site.url }}{{ site.baseurl }}{{ site.urlimg }}image.jpg)
 #
 urlimg: '/assets/img/'
-urlitemimg: '/assets/items/'
+artifactImg: '/assets/artifacts/'
+peopleImg: '/assets/people/'
 permalink: /:categories/:year/:month/:day/:title:output_ext
 
 markdown : kramdown
