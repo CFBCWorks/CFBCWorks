@@ -4,7 +4,7 @@
 # THEME. Leave Lines 4-6 alone.
 #---------------------
 remote_theme: kalanicraig/community-archive-jekyll
-repository: 'moravick/CFBC_2023Incubator.github.io' # change this to your repository name
+repository: 'cfbcworks.github.io' # change this to your repository name
 
 ##############################################
 # WHAT IS ALL THIS STUFF?
@@ -42,30 +42,30 @@ repository: 'moravick/CFBC_2023Incubator.github.io' # change this to your reposi
 #---------------------
 
 # Title of your website
-title: "CFBC ARCHIVE PROJECT"
+title: "CFBC Works Incubator"
 
 # Subtitle of your website. Leave blank if you want to.
-subtitle: "An Historical Exhibit of Clarence Fitzroy Bryant College"
+subtitle: "A Historical Exhibit of Clarence Fitzroy Bryant College"
 
 # A longer description of your site (max 150 words). Helps search engines find you.
 description: "Community Archiving Site"
 
 # These credits show up in the includes/_footer.html
 # Main author of the website.
-author: "Team Willa"
-authorname : "Willa @ IDAH"
+author: "Willa Tavernier & Sonita Daniel "
+authorname : "Willa Tavernier & Sonita Daniel "
 sitelogo: "site_logo.jpg"
 
 # What year did you start up this community project?
 sitedate : 2023
 
 # Other community social media. Leave blank if you don't have these.
-email : ""
-website : ""
-twitter : ""
-github : ""
-facebook : ""
-instagram : ""
+email : "email@email"
+website : "https://cfbcworks.github.io/"
+twitter : "twitter@twitter"
+github : "https://github.com/CFBCWorks"
+facebook : "facebook@facebook"
+instagram : "insta@insta"
 
 # If you need to know how many people visit your site, go to https://analytics.google.com/
 # When you finish the setup assistant, it will give you a Measurement ID: G-ABCDEFGHIJ
