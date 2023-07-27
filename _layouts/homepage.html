@@ -3,6 +3,7 @@ layout: default
 format: homepage
 ---
 
+<!-- HEADER + NAV BAR + TITLE STUFF -->
 <div class="darkbg">
 	<div class="grid-container">
 		<h4 class="center">{{ site.subtitle }}</h4>
@@ -10,27 +11,35 @@ format: homepage
 	</div>
 </div>
 
-<div class="grid-container">
-	<div class="grid-x grid-padding-x align-middle">
-		<div class="cell medium-8 align-right small-order-2 medium-order-1 large-order-1 align-middle" markdown="1">
-
-			{% if page.pullquote != empty %}<span class="pull-quote">
-				<p>{{page.pullquote}}</p>{% if page.quoteattribution != empty %}<p class="quiet">
-					--{{page.quoteattribution}}</p>{%endif%}
-			</span>{%endif%}
-
-			{{ content }}
-
-		</div>
-		<div class="cell medium-4 align-left small-order-1 medium-order-2 large-order-2">
-
-			<img src="{{ site.baseurl }}{{ site.urlimg }}{{ site.sitelogo }}" class="thumbnail">
-
-			<div class="address">
-				<hr>
-				<p style="text-align:center">{% if site.email != blank%}<em>{{ site.email }}</em>{%endif%}</p>
-				<hr>
-			</div>
+<!-- WALLPAPER & FEATURE QUOTE -->
+<div class="above-the-fold">
+	<div class="building-wallpaper">
+		<img src="assets/img/photo_building.jpg">
+	</div> 
+	<div class="feature-quote-box">
+		<div class="feature-quote-text">
+			{{page.pullquote}} <br>
+			--{{page.quoteattribution}}
 		</div>
 	</div>
+	
+</div>
+
+<!-- BELOW THE FOLD CONTENT + TIMELINE -->
+<div class="below-the-fold">
+	<div class="body-text">
+		{{content}}
+	</div>
+	<div class="timeline">
+
+	</div>
+</div>
+
+<!-- BELOW THE FOLD CONTENT + TIMELINE -->
+<div class="featured-banner">
+
+</div>
+
+<div class="contributions-banner">
+
 </div>
