@@ -17,7 +17,7 @@ Top Bar
 ================================================== -->
   <div class="top-bar darkbg" id="example-menu" style="width: 100%">
     <div class="image-container">
-      <img src="assets/img/asset_crest.png">
+      <img id="crest-image" src="assets/img/asset_crest.png">
     </div>
     <ul class="vertical medium-horizontal dropdown menu menu-hover-lines" data-responsive-menu="accordion medium-dropdown">
       <!--==================================================
@@ -58,12 +58,28 @@ Top Bar
     margin-left: 30px; /* Adjust the margin as needed to position the image */
   }
 
-  .image-container img {
-    width: 50px; /* Adjust the width of the image as needed */
-    height: 50px; /* Adjust the height of the image as needed */
-    border-radius: 50%; /* Assuming the image is circular, adjust this if it's not */
-    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.5); /* White drop shadow */
-  }
+/* Default style for the crest image */
+.image-container img {
+  width: 50px; /* Adjust the width of the image as needed */
+  height: 50px; /* Adjust the height of the image as needed */
+  border-radius: 50%; /* Assuming the image is circular, adjust this if it's not */
+  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.5); /* White drop shadow */
+  cursor: pointer; /* Show the pointer cursor on hover to indicate it's clickable */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Add smooth transition */
+}
+
+/* Hover effect */
+.image-container img:hover {
+  box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.8); /* Adjust the shadow for hover */
+  transform: scale(1.1); /* Adjust the scale for hover */
+}
+
+/* Active/Clicked state style */
+.image-container img.clicked {
+  box-shadow: 0 0 12px 4px rgba(255, 255, 255, 0.7); /* Adjust the shadow for the clicked state */
+  transform: scale(0.95) translateY(2px); /* Adjust the scale and vertical shift for the clicked state */
+}
+
 
   /* CSS for the navigation bar */
   .top-bar {
@@ -86,4 +102,23 @@ Top Bar
       height: 60px;
     }
   }
+
+  
 </style>
+
+<script>
+  // JavaScript function to handle image click
+  function redirectToHomePage() {
+    window.location.href = "index.html"; // Replace "home.html" with the actual URL of your home page
+  }
+  
+  // Add an event listener for mousedown and mouseup to apply the 'clicked' style
+  const crestImage = document.getElementById("crest-image");
+  crestImage.addEventListener("mousedown", function() {
+    this.classList.add("clicked"); // Add the 'clicked' class during mousedown
+  });
+  crestImage.addEventListener("mouseup", function() {
+    this.classList.remove("clicked"); // Remove the 'clicked' class during mouseup
+    redirectToHomePage(); // Redirect to the home page when the click is finished
+  });
+  </script>
