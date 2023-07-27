@@ -3,11 +3,53 @@
 Body
 ================================================== -->
 
+<style>
+  /* CSS for the image and its position */
+  .image-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%; /* Set the height to match the navigation bar's height */
+    margin-left: 10px; /* Adjust the margin as needed to position the image */
+  }
+
+  .image-container img {
+    width: 50px; /* Adjust the width of the image as needed */
+    height: 50px; /* Adjust the height of the image as needed */
+    border-radius: 50%; /* Assuming the image is circular, adjust this if it's not */
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.5); /* White drop shadow */
+  }
+
+  /* CSS for the navigation bar */
+  .top-bar {
+    text-align: center;
+    margin: 0 auto; /* To center the navigation bar */
+    position: relative; /* Ensure relative positioning to contain the image */
+    max-width: 100%; /* Set the maximum width to prevent overflow */
+    min-height: 120px;
+  }
+
+  /* CSS for the title bar (unchanged) */
+  .title-bar {
+    text-align: center;
+  }
+
+  /* Additional CSS for responsiveness (unchanged) */
+  @media only screen and (max-width: 640px) {
+    .image-container img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+</style>
+
 <div data-sticky-container style="width: 100%">
   <div data-sticky data-options="marginTop:0;" data-top-anchor="the-body:top" style="width: 100%">
-
     <div class="title-bar darkbg" data-responsive-toggle="example-menu" data-hide-for="medium" style="width: 100%">
       <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+     
       <div class="title-bar-title">{{ site.title }}</div>
     </div>
 
@@ -15,31 +57,32 @@ Body
 ==================================================
 Top Bar
 ================================================== -->
-    <div class="top-bar darkbg" id="example-menu" style="width: 100%">
-      <ul class="vertical medium-horizontal dropdown menu menu-hover-lines" data-responsive-menu="accordion medium-dropdown">
-<!--
-==================================================
-Home Link for Mobile
-================================================== -->
-			<li class="darkbg home-nav-small">
-			  <a href="{{ site.baseurl }}/">
-				Home
-			  </a>
-			</li>
-<!--
-==================================================
-Nav Loop
-================================================== -->
-{% for nav in site.data.navigation %}
-			<li class="darkbg{% if page.url == nav.url %} active{% endif %}">
-				{% if nav.url contains "http" %}<a href="{{ nav.url }}" target="_blank">{% else %}<a href="{{ site.baseurl }}{{ nav.url }}">{% endif %}
-					{{ nav.title }}<!--{{ page.url }} == {{ nav.url }}-->
-
-				</a>
-			</li>
-{% endfor %}
-      </ul>
+  <div class="top-bar darkbg" id="example-menu" style="width: 100%">
+    <div class="image-container">
+      <img src="assets/img/asset_crest.png">
     </div>
+    <ul class="vertical medium-horizontal dropdown menu menu-hover-lines" data-responsive-menu="accordion medium-dropdown">
+      <!--==================================================
+      Home Link for Mobile
+      ================================================== -->
+      <li class="darkbg home-nav-small">
+        <a href="{{ site.baseurl }}/">
+          Home
+        </a>
+      </li>
+      <!--==================================================
+      Nav Loop
+      ================================================== -->
+      {% for nav in site.data.navigation %}
+      <li class="darkbg{% if page.url == nav.url %} active{% endif %}">
+        {% if nav.url contains "http" %}<a href="{{ nav.url }}" target="_blank">{% else %}<a href="{{ site.baseurl }}{{ nav.url }}">{% endif %}
+          {{ nav.title }}<!--{{ page.url }} == {{ nav.url }}-->
+
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
 
   </div>
 </div>
