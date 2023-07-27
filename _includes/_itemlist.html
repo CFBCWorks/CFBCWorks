@@ -1,3 +1,186 @@
+<!-- DEFINE CATLIST -->
+{% assign allCats = "" | split: ',' %}
+{% assign allFormats = "" | split: ',' %}
+
+<!--BEGIN ITEM ASSIGNMENT LOOP-->
 {% for item in site.items %}
-{% include _itembox.html %}
+
+<!-- BUILDING CATEGORY LIST-->
+{% if item.categories %}
+{% for cat in item.categories %}
+{% assign allCats = allCats | push: catdash %}
 {% endfor %}
+{% endif %}
+
+<!-- BUILDING TYPE LIST-->
+{% if item.format %}
+{% for format in item.format %}
+{% assign allFormats = allFormats | push: formatdash %}
+{% endfor %}
+{% endif %}
+
+{% endfor %}
+<!-- END ITEM ASSIGNMENT LOOP-->
+
+<!-- DEFINE CATLIST -->
+{% assign allCats = "" | split: ',' %}
+{% assign allFormats = "" | split: ',' %}
+
+<!--BEGIN ITEM ASSIGNMENT LOOP-->
+{% for item in site.items %}
+
+<!-- BUILDING CATEGORY LIST-->
+{% if item.categories %}
+{% for cat in item.categories %}
+{% assign allCats = allCats | push: cat %}
+{% endfor %}
+{% endif %}
+
+<!-- BUILDING TYPE LIST-->
+{% if item.format %}
+{% for format in item.format %}
+{% assign allFormats = allFormats | push: format %}
+{% endfor %}
+{% endif %}
+
+{% endfor %}
+<!-- END ITEM ASSIGNMENT LOOP-->
+
+<!-- MAKE filter lists UNIQUE -->
+{% assign uniqueCategories = allCats | uniq %}
+{% assign uniqueFormats = allFormats | uniq %}
+
+<div id="filter-container">
+    <!-- Filter Buttons (Left Half) -->
+    <div id="buttons-container">
+        {% for category in uniqueCategories %}
+        <button class="filter-button" data-category="{{ category }}">{{ category }}</button>
+        {% endfor %}
+    </div>
+
+    <!-- Checkbox List (Right Half) -->
+    <div id="checkbox-container">
+        {% for format in uniqueFormats %}
+        <label>
+            <input type="checkbox" class="filter-checkbox" data-category="{{ format }}" />
+            {{ format }}
+        </label>
+        {% endfor %}
+    </div>
+</div>
+
+<div id="item-container">
+    {% for item in site.items %}
+    {% include _itembox.html %}
+    {% endfor %}
+</div>
+
+<script>
+    // JavaScript to handle filtering
+    const filterButtons = document.querySelectorAll('.filter-button');
+    const filterCheckboxes = document.querySelectorAll('.filter-checkbox');
+    const itemCards = document.querySelectorAll('.filter-item');
+
+    function filterItems() {
+        const selectedCategories = Array.from(filterButtons)
+            .filter(button => button.classList.contains('active'))
+            .map(button => button.dataset.category);
+
+        const selectedFormats = Array.from(filterCheckboxes)
+            .filter(checkbox => checkbox.checked)
+            .map(checkbox => checkbox.dataset.category);
+
+        itemCards.forEach(card => {
+            const itemCategories = card.dataset.categories.split(',');
+            const itemFormats = card.dataset.formats.split(',');
+
+            const showCat = selectedCategories.length === 0 || selectedCategories.some(category => itemCategories.includes(category));
+            const showForm = selectedFormats.length === 0 || selectedFormats.some(format => itemFormats.includes(format));
+
+            if (showCat && showForm) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+        });
+    }
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            button.classList.toggle('active');
+            filterItems();
+        });
+    });
+
+    filterCheckboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', () => {
+            filterItems();
+        });
+    });
+</script>
+
+<style>
+    /* Style the filter container */
+    #filter-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 20px;
+        flex: content;
+        width: 100%;
+        border: black 1px solid;
+    }
+
+    /* Style the filter buttons */
+    #buttons-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 40%;
+        border: black 1px solid;
+    }
+
+    .filter-button {
+        background-color: #2D8091;
+        /* Blue Munsell */
+        color: #FAFAFA;
+        /* Seasalt */
+        border: none;
+        border-radius: 5px;
+        padding: 8px 16px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .filter-button:hover {
+        background-color: #4A6E2E;
+        /* Fern Green */
+    }
+
+    .filter-button.active {
+        background-color: #4A6E2E;
+        /* Fern Green */
+    }
+
+    /* Style the checkbox list */
+    #checkbox-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 40%;
+        border: black 1px solid;
+    }
+
+    .filter-checkbox {
+        /* Add any additional styling you want for the checkboxes */
+    }
+
+    /* Style the tiles */
+    #item-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        justify-items: center;
+    }
+</style>
