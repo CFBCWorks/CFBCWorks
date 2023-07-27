@@ -1,3 +1,90 @@
+// CUSTOM CFBC STYLING FROM 2023 INCUBATOR
+
+.above-the-fold {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    height: 500px; /* You can adjust this height as needed */
+}
+
+.building-wallpaper {
+	position: relative;
+	width: 100%;
+	height: 100%; 
+	overflow: hidden;
+}
+
+.building-wallpaper img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	max-width: none; /* Added this line to prevent the image from being constrained */
+    background-size: cover;
+  }
+
+  @media (max-aspect-ratio: 1/1) {
+    /* Switch to 'contain' when the window becomes thin (aspect ratio less than or equal to 1) */
+    .building-wallpaper img {
+        background-size: contain;
+    }
+}
+
+.feature-quote-box {
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: whitesmoke;
+    opacity: 0.7;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Change 'center' to 'flex-start' to left-align the quote text */
+}
+
+.feature-quote-text {
+    position: relative; /* Change 'absolute' to 'relative' to center the quote text vertically */
+    color: black;
+    font-size: xx-large;
+    font-weight: bold;
+    z-index: 2;
+    opacity: 1;
+    padding: 15px;
+    line-height: 1.25;
+}
+
+.below-the-fold {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	padding: 25px;
+}
+
+.body-text {
+	text-align: justify;
+	border: 1px solid black;
+	padding: 25px;
+	width: 65%;
+}
+
+.timeline {
+	width: 35%;
+	border: 1px solid black;
+	background-color: grey;
+	padding: 25px
+}
+
+
 /** =================================
 Base settings
 ================================= **/
@@ -8,6 +95,7 @@ Base settings
 		line-height:1.15em;
 		color: $main-text-color;
 		background-color: $main-bg;
+		text-align: justify;
 	}
 	@media screen and (max-width: 39.9375em) {
 		body {
