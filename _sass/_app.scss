@@ -1,6 +1,7 @@
 // CUSTOM CFBC STYLING FROM 2023 INCUBATOR
 
 .above-the-fold {
+	margin-top: -10px;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -37,6 +38,7 @@
     }
 }
 
+
 .feature-quote-box {
     left: 0px;
     top: 0px;
@@ -44,23 +46,37 @@
     width: 50%;
     height: 100%;
     position: absolute;
-    background-color: whitesmoke;
-    opacity: 0.7;
     z-index: 1;
     display: flex;
     align-items: center;
     justify-content: flex-start; /* Change 'center' to 'flex-start' to left-align the quote text */
 }
 
+.quoteBackground {
+	left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: $pistachio;
+	opacity: 0.7;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 .feature-quote-text {
     position: relative; /* Change 'absolute' to 'relative' to center the quote text vertically */
-    color: black;
+    color: $delft_blue;
     font-size: xx-large;
     font-weight: bold;
     z-index: 2;
     opacity: 1;
-    padding: 15px;
+    padding: 30px;
     line-height: 1.25;
+	text-shadow: 0 0 4px 2px rgba(255, 255, 255, 0.5); /* White drop shadow */
 }
 
 .below-the-fold {
