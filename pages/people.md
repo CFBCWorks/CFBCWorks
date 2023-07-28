@@ -1,5 +1,5 @@
 ---
 title: Our People
-layout: collection
+layout: peopleCollection
 permalink: /people
 ---

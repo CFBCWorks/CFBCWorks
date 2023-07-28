@@ -1,7 +1,7 @@
 ---
 layout: item
 format: person
-title: Willa Tavernier 
+title: Morgan Vickery
 author: 
 contributor: Madison C.
 group: Alumni

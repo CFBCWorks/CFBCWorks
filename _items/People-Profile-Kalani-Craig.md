@@ -1,7 +1,7 @@
 ---
 layout: item
 format: person
-title: Willa Tavernier 
+title: Kalani Craig
 author: 
 contributor: Madison C.
 group: Alumni
