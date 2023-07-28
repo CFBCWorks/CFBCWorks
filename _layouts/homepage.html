@@ -4,12 +4,12 @@ format: homepage
 ---
 
 <!-- HEADER + NAV BAR + TITLE STUFF -->
-<div class="darkbg">
+<!-- <div class="darkbg">
 	<div class="grid-container">
 		<h4 class="center">{{ site.subtitle }}</h4>
 		<h1 class="center siteheader subheadline">{{ site.title }}</h1>
 	</div>
-</div>
+</div> -->
 
 <!-- WALLPAPER & FEATURE QUOTE -->
 <div class="above-the-fold">
@@ -25,7 +25,14 @@ format: homepage
 	
 </div>
 
+
 <!-- BELOW THE FOLD CONTENT + TIMELINE -->
+
+<div style="background-color:purple" class="banner" id="featured">
+	THIS A BANNER W/ INFO ABOUT UPCOMING EVENTS & NEWS!
+</div>
+
+
 <div class="below-the-fold">
 	<div class="body-text">
 		{{content}}
@@ -35,11 +42,20 @@ format: homepage
 	</div>
 </div>
 
-<!-- BELOW THE FOLD CONTENT + TIMELINE -->
-<div class="featured-banner">
-	EVENTS / FEATURED BANNER
+
+<div style="background-color:blueviolet" class="banner" id="contributions">
+	THIS IS A BANNER W/ INFO ABOUT HOW FOLKS CAN CONTRIBUTE
 </div>
 
-<div class="contributions-banner">
-	HOW TO CONTRIBUTE
-</div>
+<style>
+	.banner {
+		display: flex;
+		align-items: center; /* Center vertically */
+		justify-content: center; /* Center horizontally */
+		height: 200px;
+		width: 100%;
+		text-align: center;
+		font-size: 50px;
+		color: aliceblue;
+	}
+</style>
