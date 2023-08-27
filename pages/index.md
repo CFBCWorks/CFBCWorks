@@ -1,7 +1,7 @@
 ---
 title: CFBC Archives
 layout: homepage
-permalink: /
+permalink: /home
 pullquote: ""Outstanding tertiary education powering our nation"
 quoteattribution:
 ---
