@@ -1,0 +1,63 @@
+---
+layout: default
+format: homepage2
+---
+
+<!-- HEADER + NAV BAR + TITLE STUFF -->
+<div class="darkbg">
+	<div class="grid-container">
+		<h4 class="center">{{ site.subtitle }}</h4>
+		<h1 class="center siteheader subheadline">{{ site.title }}</h1>
+	</div>
+</div>
+
+<!-- WALLPAPER & FEATURE QUOTE -->
+<div class="above-the-fold">
+	<div class="building-wallpaper">
+		<img src="assets/img/photo_building.jpg">
+	</div> 
+	<div class="feature-quote-box">
+		<div class="quoteBackground">
+		</div>
+		<div class="feature-quote-text">
+			{{page.pullquote}} <br>
+			--{{page.quoteattribution}}
+		</div>
+	</div>
+	
+</div>
+
+
+<!-- BELOW THE FOLD CONTENT + TIMELINE -->
+
+<div style="background-color:purple" class="banner" id="featured">
+	A BANNER W/ INFO ABOUT UPCOMING EVENTS & NEWS!
+</div>
+
+
+<div class="below-the-fold">
+	<div class="body-text">
+		{{content}}
+	</div>
+	<div class="timeline">
+		TIMELINE
+	</div>
+</div>
+
+
+<div style="background-color:blueviolet" class="banner" id="contributions">
+	A BANNER W/ INFO ABOUT HOW FOLKS CAN CONTRIBUTE!
+</div>
+
+<style>
+	.banner {
+		display: flex;
+		align-items: center; /* Center vertically */
+		justify-content: center; /* Center horizontally */
+		height: 200px;
+		width: 100%;
+		text-align: center;
+		font-size: 50px;
+		color: aliceblue;
+	}
+</style>
