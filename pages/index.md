@@ -2,8 +2,8 @@
 title: CFBC Archives
 layout: homepage
 permalink: /
-pullquote: "This is a meaningful quote / tagline that represents the projects mission!"
-quoteattribution: "CFBC person"
+pullquote: ""Outstanding tertiary education powering our nation"
+quoteattribution:
 ---
 
 The establishment of the **Clarence Fitzroy Bryant College** was a pivotal post-independence project of the [Federation of St. Kitts](https://www.stkittstourism.kn/) and [Nevis](https://nevisisland.com/). The Federation gained independence from Britain in 1983 and the College was established in 1988 as the College of Further Education. The government of the day intended that the College would provide the skilled workforce needed for the developing country (which is the smallest independent nation in the Western Hemisphere) for economic development. Policy makers envisaged an institution that would provide training for middle managers, build human resource expertise in different sectors of the economy, and offer first year university courses in collaboration with the University of the West Indies.
