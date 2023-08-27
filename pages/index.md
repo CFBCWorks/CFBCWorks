@@ -2,7 +2,7 @@
 title: CFBC Archives
 layout: homepage
 permalink: /home
-pullquote: "Outstanding tertiary education powering our nation"
+pullquote:"Outstanding tertiary education powering our nation"
 quoteattribution:"none"
 ---
 
