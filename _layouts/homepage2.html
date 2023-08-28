@@ -13,51 +13,62 @@ format: homepage2
 
 <!-- WALLPAPER & FEATURE QUOTE -->
 <div class="above-the-fold">
-	<div class="building-wallpaper">
-		<img src="assets/img/photo_building.jpg">
-	</div> 
-	<div class="feature-quote-box">
-		<div class="quoteBackground">
-		</div>
-		<div class="feature-quote-text">
-			{{page.pullquote}} <br>
-			--{{page.quoteattribution}}
-		</div>
-	</div>
-	
-</div>
+	<div class="grid-container">
+<div class="grid-x grid-padding-x align-middle">
+<div class="cell medium-8 align-right small-order-2 medium-order-1 large-order-1 align-middle" markdown="1" >
 
+{% if page.pullquote != empty %}<span class="pull-quote"><p>{{page.pullquote}}</p>{% if page.quoteattribution != empty %}<p class="quiet">--{{page.quoteattribution}}</p>{%endif%}</span>{%endif%}
+
+			<p> 4 campuses.
+			<br>
+			<br>
+			5 divisions.
+			<br>
+            		<br>
+			60 degree programs.
+			</p>
+</div>
+	<div class="cell medium-4 align-left small-order-1 medium-order-2 large-order-2">
+
+<p>To contribute to this community history project, please contact Mrs. Sonita Daniel, Director of Library Services.</p>
+
+<div class="address">
+  	<hr><p style="text-align:center">{% if site.email != blank%}<em>{{ site.email }}</em>{%endif%}</p><hr>
+</div>	
+</div>
+</div>
+</div>
+</div>
 
 <!-- BELOW THE FOLD CONTENT + TIMELINE -->
 
-<div style="background-color:purple" class="banner" id="featured">
-	A BANNER W/ INFO ABOUT UPCOMING EVENTS & NEWS!
-</div>
-
 
 <div class="below-the-fold">
-	<div class="body-text">
-		{{content}}
+	<div class="lead">
+		<h1 Overview</h1>
 	</div>
-	<div class="timeline">
-		TIMELINE
+		{{content}}
+		</div>
 	</div>
 </div>
+	
 
 
-<div style="background-color:blueviolet" class="banner" id="contributions">
+<div style="background-color:pastel_green" class="banner" id="contributions">
 	A BANNER W/ INFO ABOUT HOW FOLKS CAN CONTRIBUTE!
 </div>
 
 <style>
-	.banner {
+	
+		.banner {
 		display: flex;
 		align-items: center; /* Center vertically */
 		justify-content: center; /* Center horizontally */
 		height: 200px;
 		width: 100%;
 		text-align: center;
-		font-size: 50px;
-		color: aliceblue;
+		font-size: 25px;
+		color: gray98;
 	}
+	
 </style>
