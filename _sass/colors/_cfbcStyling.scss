@@ -13,6 +13,7 @@ $pastel_green: #00619b;
 $danger: #a82b1e;
 $dimgray: #6a6a6a;
 $signalblack: #2C2C2C;
+$cadet: 5c6269;
 
 /** main color scheme **/
 $main-text-color: $signalblack;
@@ -23,7 +24,7 @@ $main-headers: $cerulean;
 
 /** dark-background color scheme **/
 $dark-text-color: $delft_blue;
-$dark-bg: $gray98;
+$dark-bg: $cadet;
 $dark-link: $cerulean;
 $dark-link-hover: $danger;
 $dark-headers: $cerulean;
