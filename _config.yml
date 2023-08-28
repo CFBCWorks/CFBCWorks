@@ -60,12 +60,12 @@ sitelogo: "site_logo.jpg"
 sitedate : 2023
 
 # Other community social media. Leave blank if you don't have these.
-email : "email@email"
+email : "sonita.daniel [at] cfbc.edu.kn"
 website : "https://cfbcworks.github.io/"
-twitter : "twitter@twitter"
+twitter : ""
 github : "https://github.com/CFBCWorks"
-facebook : "facebook@facebook"
-instagram : "insta@insta"
+facebook : "https://www.facebook.com/CFBCSKN/"
+instagram : "https://instagram.com/cfbcskb"
 
 # If you need to know how many people visit your site, go to https://analytics.google.com/
 # When you finish the setup assistant, it will give you a Measurement ID: G-ABCDEFGHIJ
