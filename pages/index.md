@@ -2,9 +2,15 @@
 title: History
 layout: homepage2
 permalink: /
-pullquote: "Outstanding tertiary education, powering our nation"
-quoteattribution: ""
+pullquote: "Playing a pivotal role in the development thrust of St. Kitts and Nevis"
+quoteattribution: "Marilyn Rogers, Former Principal - Clarence Fitzroy Bryant College"
 ---
+
+# OVERVIEW
+
+The Clarence Fitzroy Bryant College is a unique post-colonial and anti-colonial endeavour of successive government administrations of our twin-island Federation. As the only indigenous tertiary institution, it provides outstanding tertiary education to power the nation.
+
+**Here's a timeline of key events.**
 
 # 1988
 
