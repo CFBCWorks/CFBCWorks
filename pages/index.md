@@ -2,8 +2,8 @@
 title: History
 layout: homepage2
 permalink: /
-pullquote: "Playing a pivotal role in the development thrust of St. Kitts and Nevis"
-quoteattribution: "Marilyn Rogers, Former Principal - Clarence Fitzroy Bryant College"
+pullquote: "4 campuses. <br> 5 Divisions. <br> 60 degree programs."
+quoteattribution: 
 ---
 
 # OVERVIEW
