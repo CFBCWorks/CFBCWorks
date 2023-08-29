@@ -2,7 +2,7 @@
 title: History
 layout: homepage2
 permalink: /
-pullquote: "4 campuses. <br> 5 Divisions. <br> 60 degree programs."
+pullquote: "4 campuses. 5 Divisions. 60 degree programs."
 quoteattribution: 
 ---
 
