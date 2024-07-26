@@ -1,5 +1,5 @@
 ---
-title: History
+title: The Digital History Project
 layout: page
 permalink: /Project
 ---
