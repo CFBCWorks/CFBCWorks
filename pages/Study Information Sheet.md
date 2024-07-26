@@ -5,7 +5,7 @@ permalink: /Project
 ---
 
 ##### BUILDING A TRUSTED DIGITAL HISTORY OF THE CLARENCE FITZROY BRYANT COLLEGE
-The the Archiving, Documenting & Disseminating the History of The Clarence Fitzroy Bryant College (CFBC) Project has identified that  
+The Archiving, Documenting & Disseminating the History of The Clarence Fitzroy Bryant College (CFBC) Project has identified that  
 1. there is no systematic documentation of the history of the establishment or impact of the CFBC.  
 2. the risk that this history could be lost is high, as the policymakers and others involved are of advanced age or deceased.  
 3. it is therefore urgent that we research, document and preserve this history before it is lost. 
