@@ -167,6 +167,15 @@ Base settings
 	  background-color: $dark-headers;
 	}
 	
+/** == iframe styling **/
+
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  /* Remove align-items property */
+  height: 100vh;
+}
+
 /** == Header styling **/
 
 	h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
