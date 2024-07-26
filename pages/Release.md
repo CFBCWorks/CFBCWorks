@@ -1,5 +1,5 @@
 ---
-title: CFBC Digital History Release Agreement
+title: Participant Release
 layout: page
 permalink: /Release
 ---
