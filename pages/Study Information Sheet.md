@@ -1,7 +1,7 @@
 ---
 title: History
 layout: page
-permalink: /
+permalink: /Project
 ---
 
 # BUILDING A TRUSTED DIGITAL HISTORY OF THE CLARENCE FITZROY BRYANT COLLEGE
