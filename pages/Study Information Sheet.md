@@ -1,7 +1,7 @@
 ---
 title: The Digital History Project
 layout: page
-permalink: /Project
+permalink: /Study
 ---
 
 ##### BUILDING A TRUSTED DIGITAL HISTORY OF THE CLARENCE FITZROY BRYANT COLLEGE
